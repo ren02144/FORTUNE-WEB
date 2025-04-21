@@ -15,7 +15,7 @@ export default function HexagramList({ hexagrams }: Props) {
       <ul className="grid grid-cols-2 gap-4">
         {hexagrams.map((h) => (
           <li key={h.id} className="border p-4 rounded shadow hover:bg-gray-50">
-            <Link href={`/hexagrams/${h.id}`}>
+            <Link legacyBehavior href={`/hexagrams/${h.id}`}>
               <a className="text-lg font-semibold hover:underline">{h.id}. {h.name}</a>
             </Link>
           </li>
