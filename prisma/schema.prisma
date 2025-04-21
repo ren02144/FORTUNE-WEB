@@ -1,0 +1,15 @@
+// prisma/schema.prisma
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")  // 从环境变量读取数据库连接字符串
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Hexagram {
+  id          Int     @id @default(autoincrement())  // 主键，自增整数
+  name        String                                   // 卦名
+  description String                                   // 卦辞/解释
+}
