@@ -1,6 +1,6 @@
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL") 
+  url      = env("DATABASE_URL")
 }
 
 generator client {
@@ -8,7 +8,10 @@ generator client {
 }
 
 model hexagram {
-  id          Int     @id @default(autoincrement())
-  name        String                                  
+  id          Int      @id @default(autoincrement())
+  name        String
+  brief       String
   description String
+  judgment    String
+  lines       String[]
 }
