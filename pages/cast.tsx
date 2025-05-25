@@ -66,13 +66,13 @@ const lineMeaning = {
       .filter((x) => x !== null) as number[]
   
     return (
-      <main className="min-h-screen bg-cover bg-center px-4 py-6" style={{ backgroundImage: "url('/images/bg-texture.jpg')" }}>
+      <main className="min-h-screen bg-cover bg-center px-4 py-6" style={{ backgroundImage: "url('/assets/images/canvas.jpg')" }}>
         <div className="max-w-xl mx-auto">
-          <h1 className="text-2xl font-bold text-center mb-6">掷硬币起卦</h1>
+          <h1 className="text-2xl font-bold text-center mb-6">心中默念所求之事，掷硬币起卦</h1>
           <div className="text-center mb-6">
             <button
               onClick={handleCast}
-              className="px-6 py-3 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700 transition"
+              className="px-8 py-4 text-lg sm:text-xl bg-indigo-600 text-white rounded shadow hover:bg-indigo-700 transition"
             >
               掷卦
             </button>
